@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+html,body,#root{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+div[class^="octoprintApi_"]{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  /* border-radius: 25px;
+  backdrop-filter: blur(10px); */
+  background: white;
+}
+div.octoprintApi_connection div.octoprintApi_connection_state,div.octoprintApi_job div.octoprintApi_job_progress{
+  width: 100%;
+}
+div.octoprintApi_job span{
+  display: inline-block;
+  width: calc(100%/3);
+}
+div.octoprintApi_job div[class^="octoprintApi_job_progress_bar"]{
+  padding: 0;
+  border-radius: 0;
+  display: block;
+}
+div.octoprintApi_job div.octoprintApi_job_progress_bar{
+  width: 100%;
+  background: #ebebeb;
+}
+div.octoprintApi_job div.octoprintApi_job_progress_bar_bar{
+  height: 10px;
+  background: #6B9EE1;
+}
+div.octoprintApi_temps canvas{
+  height: auto !important;
+  width: 100% !important;
+}
+div.octoprintApi_printingFile{
+  backdrop-filter: none;
+}
